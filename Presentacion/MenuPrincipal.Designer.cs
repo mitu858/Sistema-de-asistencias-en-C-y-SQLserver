@@ -61,6 +61,8 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel21 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel18.SuspendLayout();
@@ -73,6 +75,8 @@
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.panel21.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -431,11 +435,32 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.panel21);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(159, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(694, 589);
             this.panel2.TabIndex = 1;
+            // 
+            // panel21
+            // 
+            this.panel21.Controls.Add(this.label3);
+            this.panel21.Location = new System.Drawing.Point(37, 58);
+            this.panel21.Name = "panel21";
+            this.panel21.Size = new System.Drawing.Size(636, 437);
+            this.panel21.TabIndex = 0;
+            // 
+            // label3
+            // 
+            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 80F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.LightGray;
+            this.label3.Location = new System.Drawing.Point(0, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(636, 437);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Bienvenido a Alkahuete";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // MenuPrincipal
             // 
@@ -459,6 +484,8 @@
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel21.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -497,5 +524,7 @@
         private Label label2;
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
+        private Panel panel21;
+        private Label label3;
     }
 }
